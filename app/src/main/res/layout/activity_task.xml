@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityTask"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/material_margin">
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            style="@style/EditTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/material_margin"
+            android:background="@drawable/priority_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/reminder_text"/>
+
+            <View style="@style/ViewStyle"/>
+
+            <TextView
+                android:id="@+id/buttonReminder"
+                style="@style/ButtonNotificationStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/material_margin"
+            android:layout_marginTop="@dimen/material_margin"
+            android:background="@drawable/priority_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="@string/priority_text"/>
+
+            <View style="@style/ViewStyle"/>
+
+            <TextView
+                android:id="@+id/buttonHigh"
+                style="@style/ButtonPriorityStyle"
+                android:text="@string/button_high"/>
+
+            <View style="@style/ViewStyle"/>
+
+            <TextView
+                android:id="@+id/buttonMedium"
+                style="@style/ButtonPriorityStyle"
+                android:text="@string/button_medium"/>
+
+            <View style="@style/ViewStyle"/>
+
+            <TextView
+                android:id="@+id/buttonLow"
+                style="@style/ButtonPriorityStyle"
+                android:text="@string/button_low"/>
+
+            <View style="@style/ViewStyle"/>
+
+            <TextView
+                android:id="@+id/buttonDefault"
+                style="@style/ButtonPriorityStyle"
+                android:text="@string/button_default"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buttonAction"
+            style="@style/ButtonActionStyle"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="separator_height">0.7dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="button_padding">6dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="material_margin">16dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
+    <dimen name="button_radius">28dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+    <dimen name="priority_size">56dp</dimen>
+    <dimen name="picker_size">128dp</dimen>
+    <dimen name="info_icon_size">160dp</dimen>
+    <dimen name="action_button_size">170dp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_big">20sp</dimen>
+</resources>

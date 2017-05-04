@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">To-Do List</string>
+    <string name="receiver_update_list" translatable="false">com.choliy.igor.todolist.UPDATE_LIST_ACTION</string>
+    <string name="receiver_update_task" translatable="false">com.choliy.igor.todolist.UPDATE_TASK_ACTION</string>
+
+    <!-- Screen names -->
+    <string name="activity_name_add_task">Add a new task</string>
+    <string name="activity_name_edit_task">Edit task</string>
+
+    <!-- Button -->
+    <string name="button_add">ADD</string>
+    <string name="button_update">UPDATE</string>
+    <string name="button_high">HIGH</string>
+    <string name="button_medium">MEDIUM</string>
+    <string name="button_low">LOW</string>
+    <string name="button_default">DEFAULT</string>
+    <string name="button_notification_on">ON</string>
+    <string name="button_notification_off">OFF</string>
+
+    <!-- Info text -->
+    <string name="hint_edit_text">Describe your task…</string>
+    <string name="reminder_text">REMINDER</string>
+    <string name="priority_text">PRIORITY</string>
+    <string name="info_empty">To-Do list is empty</string>
+    <string name="info_new_task">Get started by adding new task</string>
+
+    <!-- SnackBars -->
+    <string name="snack_bar_undo">UNDO</string>
+    <string name="info_empty_title">Please describe your task</string>
+    <string name="info_tasks_removed">All tasks has been removed</string>
+    <string name="info_tasks_restored">All tasks restored</string>
+    <string name="info_task_added">Task added</string>
+    <string name="info_task_removed">Task removed</string>
+    <string name="info_task_restored">Task restored</string>
+    <string name="info_task_updated">Task updated</string>
+    <string name="info_list_already_empty">To-Do list is already empty</string>
+
+    <!-- Menu -->
+    <string name="menu_info">Information</string>
+    <string name="menu_delete">Delete all tasks</string>
+    <string name="menu_done">Done</string>
+
+    <!-- Info Dialog -->
+    <string name="dialog_info_title">App information</string>
+    <string name="dialog_info_message">Simple and convenient App for controlling everyday tasks.</string>
+    <string name="dialog_info_developer" translatable="false">Igor Choliy © 2017</string>
+    <string name="dialog_linkedin_url" translatable="false">https://www.linkedin.com/in/choliy</string>
+    <string name="dialog_info_close">CLOSE</string>
+
+    <!-- Delete Dialog -->
+    <string name="dialog_delete_message">Do you really want to delete all tasks?</string>
+    <string name="dialog_delete_yes">YES</string>
+    <string name="dialog_delete_no">NO</string>
+
+    <!-- Unsaved Dialog -->
+    <string name="dialog_unsaved_message">Discard your changes and quit editing?</string>
+    <string name="dialog_unsaved_discard">Discard</string>
+    <string name="dialog_unsaved_keep_editing">Keep editing</string>
+
+    <!-- Reminder Dialog -->
+    <string name="dialog_reminder_title_add">Add Reminder</string>
+    <string name="dialog_reminder_title_edit">Edit Reminder</string>
+    <string name="dialog_reminder_dismiss">Reminder was dismissed</string>
+    <string name="dialog_reminder_added">Reminder Added:\u0020\u0020</string>
+    <string name="dialog_reminder_updated">Reminder Updated:\u0020\u0020</string>
+    <string name="dialog_reminder_better_time">Much better to set future time for reminder</string>
+    <string name="dialog_date_text">Date</string>
+    <string name="dialog_time_text">Time</string>
+
+    <!-- Content description -->
+    <string name="description_ic_info">Information icon</string>
+    <string name="description_ic_notification">Notification icon</string>
+    <string name="description_date_picker">Date picker icon</string>
+    <string name="description_time_picker">Time picker icon</string>
+
+</resources>

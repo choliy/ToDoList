@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/material_margin"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal"/>
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/info_icon_size"
+            android:layout_height="@dimen/info_icon_size"
+            android:layout_marginBottom="@dimen/material_margin"
+            android:contentDescription="@string/description_ic_info"
+            android:src="@drawable/ic_empty_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:text="@string/info_empty"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_new_task"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

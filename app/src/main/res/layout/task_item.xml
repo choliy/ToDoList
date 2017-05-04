@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.choliy.igor.todolist.activity.ListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/material_margin"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_medium"
+            tools:text="Go swimming!"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/big_margin"
+            android:layout_height="@dimen/big_margin">
+
+            <View
+                android:id="@+id/priorityView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/priority_circle"/>
+
+            <ImageView
+                android:id="@+id/reminderTask"
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="@dimen/medium_margin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/description_ic_notification"
+                android:src="@drawable/ic_reminder"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_height"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginStart="@dimen/material_margin"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

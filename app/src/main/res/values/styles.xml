@@ -1,0 +1,55 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_edit_text</item>
+        <item name="android:hint">@string/hint_edit_text</item>
+        <item name="android:padding">@dimen/material_margin</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/material_margin</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="ButtonPriorityStyle">
+        <item name="android:layout_width">@dimen/priority_size</item>
+        <item name="android:layout_height">@dimen/priority_size</item>
+        <item name="android:background">@drawable/priority_circle</item>
+        <item name="android:clickable">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonNotificationStyle" parent="ButtonPriorityStyle">
+        <item name="android:background">@drawable/selector_notification_off</item>
+        <item name="android:text">@string/button_notification_off</item>
+    </style>
+
+    <style name="ButtonActionStyle" parent="ButtonPriorityStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/selector_action_button</item>
+        <item name="android:text">@string/button_add</item>
+    </style>
+
+    <style name="ViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

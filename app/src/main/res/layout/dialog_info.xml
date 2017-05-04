@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:text="@string/dialog_info_title"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:text="@string/dialog_info_message"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/developerUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/dialog_info_developer"
+        android:textColor="@drawable/selector_developer"
+        android:textSize="@dimen/text_small"/>
+
+</LinearLayout>
