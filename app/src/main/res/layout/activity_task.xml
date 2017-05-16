@@ -26,7 +26,7 @@
                 style="@style/TextViewStyle"
                 android:text="@string/reminder_text"/>
 
-            <View style="@style/ViewStyle"/>
+            <View style="@style/ViewFirstStyle"/>
 
             <TextView
                 android:id="@+id/buttonReminder"
@@ -46,33 +46,26 @@
                 style="@style/TextViewStyle"
                 android:text="@string/priority_text"/>
 
-            <View style="@style/ViewStyle"/>
+            <View style="@style/ViewSecondStyle"/>
 
             <TextView
                 android:id="@+id/buttonHigh"
                 style="@style/ButtonPriorityStyle"
                 android:text="@string/button_high"/>
 
-            <View style="@style/ViewStyle"/>
+            <View style="@style/ViewFirstStyle"/>
 
             <TextView
                 android:id="@+id/buttonMedium"
                 style="@style/ButtonPriorityStyle"
                 android:text="@string/button_medium"/>
 
-            <View style="@style/ViewStyle"/>
+            <View style="@style/ViewFirstStyle"/>
 
             <TextView
                 android:id="@+id/buttonLow"
                 style="@style/ButtonPriorityStyle"
                 android:text="@string/button_low"/>
-
-            <View style="@style/ViewStyle"/>
-
-            <TextView
-                android:id="@+id/buttonDefault"
-                style="@style/ButtonPriorityStyle"
-                android:text="@string/button_default"/>
 
         </LinearLayout>
 

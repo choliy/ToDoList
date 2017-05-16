@@ -10,7 +10,7 @@
     <dimen name="priority_size">56dp</dimen>
     <dimen name="picker_size">128dp</dimen>
     <dimen name="info_icon_size">160dp</dimen>
-    <dimen name="action_button_size">170dp</dimen>
+    <dimen name="action_button_size">200dp</dimen>
     <dimen name="text_small">16sp</dimen>
     <dimen name="text_medium">18sp</dimen>
     <dimen name="text_big">20sp</dimen>

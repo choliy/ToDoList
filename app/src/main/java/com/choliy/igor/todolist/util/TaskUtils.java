@@ -65,43 +65,37 @@ public final class TaskUtils {
         TextView buttonHigh = (TextView) ((Activity) context).findViewById(R.id.buttonHigh);
         TextView buttonMedium = (TextView) ((Activity) context).findViewById(R.id.buttonMedium);
         TextView buttonLow = (TextView) ((Activity) context).findViewById(R.id.buttonLow);
-        TextView buttonDefault = (TextView) ((Activity) context).findViewById(R.id.buttonDefault);
 
         GradientDrawable priorityHigh = (GradientDrawable) buttonHigh.getBackground();
         GradientDrawable priorityMedium = (GradientDrawable) buttonMedium.getBackground();
         GradientDrawable priorityLow = (GradientDrawable) buttonLow.getBackground();
-        GradientDrawable priorityDefault = (GradientDrawable) buttonDefault.getBackground();
 
         final int colorHigh = ContextCompat.getColor(context, R.color.colorHigh);
         final int colorMedium = ContextCompat.getColor(context, R.color.colorMedium);
         final int colorLow = ContextCompat.getColor(context, R.color.colorLow);
         final int colorDefault = ContextCompat.getColor(context, R.color.colorDefault);
-        final int colorDefaultDark = ContextCompat.getColor(context, R.color.colorDefaultDark);
 
         switch (priority) {
             case ProjectConstants.PRIORITY_HIGH:
                 priorityHigh.setColor(colorHigh);
                 priorityMedium.setColor(colorDefault);
                 priorityLow.setColor(colorDefault);
-                priorityDefault.setColor(colorDefault);
                 break;
             case ProjectConstants.PRIORITY_MEDIUM:
                 priorityHigh.setColor(colorDefault);
                 priorityMedium.setColor(colorMedium);
                 priorityLow.setColor(colorDefault);
-                priorityDefault.setColor(colorDefault);
                 break;
             case ProjectConstants.PRIORITY_LOW:
                 priorityHigh.setColor(colorDefault);
                 priorityMedium.setColor(colorDefault);
                 priorityLow.setColor(colorLow);
-                priorityDefault.setColor(colorDefault);
                 break;
+            // For avoiding bugs in old versions of the app after updating
             case ProjectConstants.PRIORITY_DEFAULT:
                 priorityHigh.setColor(colorDefault);
                 priorityMedium.setColor(colorDefault);
-                priorityLow.setColor(colorDefault);
-                priorityDefault.setColor(colorDefaultDark);
+                priorityLow.setColor(colorLow);
                 break;
         }
     }

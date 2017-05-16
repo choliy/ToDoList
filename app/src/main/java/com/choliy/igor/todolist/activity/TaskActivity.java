@@ -41,8 +41,8 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
 
     // Variables for handle changes for unsaved changes dialog
     private long mSavedReminderTime;
-    private int mPriority = ProjectConstants.PRIORITY_DEFAULT;
-    private int mPriorityChanged = ProjectConstants.PRIORITY_DEFAULT;
+    private int mPriority = ProjectConstants.PRIORITY_LOW;
+    private int mPriorityChanged = ProjectConstants.PRIORITY_LOW;
     private String mSavedDescription = ProjectConstants.DESCRIPTION_EMPTY;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,10 +118,6 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
                 mPriority = ProjectConstants.PRIORITY_LOW;
                 TaskUtils.setButtonBackground(this, mPriority);
                 break;
-            case R.id.buttonDefault:
-                mPriority = ProjectConstants.PRIORITY_DEFAULT;
-                TaskUtils.setButtonBackground(this, mPriority);
-                break;
             case R.id.buttonAction:
                 addOrUpdateTask();
                 break;
@@ -176,6 +172,11 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
             ReminderUtils.sReminderId = cursor.getLong(idIndex);
             String description = cursor.getString(descriptionIndex);
             mPriority = cursor.getInt(priorityIndex);
+
+            // For avoiding bugs in old versions of the app after updating
+            if (mPriority == ProjectConstants.PRIORITY_DEFAULT)
+                mPriority = ProjectConstants.PRIORITY_LOW;
+
             if (ReminderUtils.sReminderTime > ProjectConstants.REMINDER_TIME_NULL)
                 mSavedReminderTime = ReminderUtils.sReminderTime;
             else
@@ -282,14 +283,12 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
         TextView buttonHigh = (TextView) findViewById(R.id.buttonHigh);
         TextView buttonMedium = (TextView) findViewById(R.id.buttonMedium);
         TextView buttonLow = (TextView) findViewById(R.id.buttonLow);
-        TextView buttonDefault = (TextView) findViewById(R.id.buttonDefault);
         TextView buttonReminder = (TextView) findViewById(R.id.buttonReminder);
 
         mButtonAction.setOnClickListener(this);
         buttonHigh.setOnClickListener(this);
         buttonMedium.setOnClickListener(this);
         buttonLow.setOnClickListener(this);
-        buttonDefault.setOnClickListener(this);
         buttonReminder.setOnClickListener(this);
         buttonReminder.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

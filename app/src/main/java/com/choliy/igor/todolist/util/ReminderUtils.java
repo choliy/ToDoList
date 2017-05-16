@@ -72,9 +72,6 @@ public final class ReminderUtils {
             case ProjectConstants.PRIORITY_LOW:
                 builder.setColor(ContextCompat.getColor(context, R.color.colorLow));
                 break;
-            case ProjectConstants.PRIORITY_DEFAULT:
-                builder.setColor(ContextCompat.getColor(context, R.color.colorDefaultDark));
-                break;
         }
 
         NotificationManager notificationManager =

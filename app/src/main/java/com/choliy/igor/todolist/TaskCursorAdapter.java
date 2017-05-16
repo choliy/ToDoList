@@ -144,17 +144,18 @@ public class TaskCursorAdapter extends RecyclerView.Adapter<TaskCursorAdapter.Ta
         private int getPriorityColor(int priority) {
             int priorityColor = 0;
             switch (priority) {
-                case 1:
+                case ProjectConstants.PRIORITY_HIGH:
                     priorityColor = ContextCompat.getColor(mContext, R.color.colorHigh);
                     break;
-                case 2:
+                case ProjectConstants.PRIORITY_MEDIUM:
                     priorityColor = ContextCompat.getColor(mContext, R.color.colorMedium);
                     break;
-                case 3:
+                case ProjectConstants.PRIORITY_LOW:
                     priorityColor = ContextCompat.getColor(mContext, R.color.colorLow);
                     break;
-                case 4:
-                    priorityColor = ContextCompat.getColor(mContext, R.color.colorDefault);
+                // For avoiding bugs in old versions of the app after updating
+                case ProjectConstants.PRIORITY_DEFAULT:
+                    priorityColor = ContextCompat.getColor(mContext, R.color.colorLow);
                 default:
                     break;
             }

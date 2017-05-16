@@ -7,9 +7,8 @@
     <color name="colorAccent">#2196F3</color>
 
     <!-- Colors for task priority selection -->
-    <color name="colorPriorityBackground">#ECEFF1</color>
+    <color name="colorToolsBackground">#ECEFF1</color>
     <color name="colorDefault">#CFD8DC</color>
-    <color name="colorDefaultDark">#90A4AE</color>
     <color name="colorHigh">#EF5350</color>
     <color name="colorMedium">#FFCA28</color>
     <color name="colorLow">#64B5F6</color>
