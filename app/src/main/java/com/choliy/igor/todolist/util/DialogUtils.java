@@ -182,6 +182,10 @@ public final class DialogUtils {
         final View view = View.inflate(context, R.layout.dialog_info, null);
         final TextView developerUrl = (TextView) view.findViewById(R.id.developerUrl);
 
+        int year = Calendar.getInstance().get(Calendar.YEAR);
+        String text = context.getString(R.string.dialog_info_developer, String.valueOf(year));
+        developerUrl.setText(text);
+
         developerUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
