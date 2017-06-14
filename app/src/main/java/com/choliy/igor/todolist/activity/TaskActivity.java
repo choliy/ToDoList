@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -279,6 +281,9 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
 
     private void setViewsAndListeners() {
         mEditTextDescription = (EditText) findViewById(R.id.editTextDescription);
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         mButtonAction = (TextView) findViewById(R.id.buttonAction);
         TextView buttonHigh = (TextView) findViewById(R.id.buttonHigh);
         TextView buttonMedium = (TextView) findViewById(R.id.buttonMedium);

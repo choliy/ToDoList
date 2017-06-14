@@ -27,8 +27,7 @@
         <activity
             android:name="com.choliy.igor.todolist.activity.TaskActivity"
             android:launchMode="singleTop"
-            android:parentActivityName="com.choliy.igor.todolist.activity.ListActivity"
-            android:windowSoftInputMode="stateHidden"/>
+            android:parentActivityName="com.choliy.igor.todolist.activity.ListActivity"/>
 
         <provider
             android:name="com.choliy.igor.todolist.data.TaskContentProvider"

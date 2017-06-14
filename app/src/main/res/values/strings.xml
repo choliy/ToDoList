@@ -44,7 +44,7 @@
     <string name="dialog_info_title">App information</string>
     <string name="dialog_info_message">Simple and convenient App for controlling everyday tasks.</string>
     <string name="dialog_info_developer" translatable="false">© %1$s by Igor Choliy</string>
-    <string name="dialog_info_version" translatable="false">v1.7.3</string>
+    <string name="dialog_info_version" translatable="false">v1.7.5</string>
     <string name="dialog_linkedin_url" translatable="false">https://www.linkedin.com/in/choliy</string>
     <string name="dialog_info_close">CLOSE</string>
 

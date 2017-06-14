@@ -152,7 +152,7 @@ public final class DialogUtils {
                 if (ReminderUtils.sReminderTime <= System.currentTimeMillis())
                     TaskUtils.showLongSnackBar(view, R.string.dialog_reminder_better_time);
                 else
-                    TaskUtils.showSnackBar(view, reminderInfoText);
+                    TaskUtils.showLongSnackBar(view, reminderInfoText);
             }
         });
 
@@ -234,17 +234,10 @@ public final class DialogUtils {
             public void onClick(DialogInterface dialog, int id) {
 
                 // Delete all tasks
-                int deletedTasks = context.getContentResolver().delete(
+                context.getContentResolver().delete(
                         TaskContract.TaskEntry.CONTENT_URI,
                         null,
                         null);
-
-                // Show info snackBar if list already empty
-                if (deletedTasks == 0) {
-                    TaskUtils.showSnackBar(TaskUtils.getView(context),
-                            R.string.info_list_already_empty);
-                    return;
-                }
 
                 // Save "Remove All" action
                 TaskUtils.sTaskListAction = ProjectConstants.TASK_LIST_REMOVE_ALL;

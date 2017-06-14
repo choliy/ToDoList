@@ -43,7 +43,8 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/description_ic_notification"
                 android:src="@drawable/ic_reminder"
-                android:visibility="invisible"/>
+                android:visibility="invisible"
+                tools:visibility="visible"/>
 
         </FrameLayout>
 

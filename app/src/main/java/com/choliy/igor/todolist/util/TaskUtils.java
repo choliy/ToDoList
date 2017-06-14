@@ -175,12 +175,12 @@ public final class TaskUtils {
         Snackbar.make(view, textId, Snackbar.LENGTH_SHORT).show();
     }
 
-    static void showSnackBar(View view, String text) {
-        Snackbar.make(view, text, Snackbar.LENGTH_LONG).show();
-    }
-
     static void showLongSnackBar(View view, int textId) {
         Snackbar.make(view, textId, Snackbar.LENGTH_LONG).show();
+    }
+
+    static void showLongSnackBar(View view, String text) {
+        Snackbar.make(view, text, Snackbar.LENGTH_LONG).show();
     }
 
     static void restoreAllTasks(final Context context,

@@ -24,7 +24,7 @@
     <string name="dialog_unsaved_message">Відмінити зміни та вийти з редагування?</string>
     <string name="hint_edit_text">Опишіть вашу задачу…</string>
     <string name="info_empty">Список справ порожній</string>
-    <string name="info_empty_title">Опишіть будь-ласка вашу задачу</string>
+    <string name="info_empty_title">Опишіть будь ласка вашу задачу</string>
     <string name="info_list_already_empty">Список справ вже порожній</string>
     <string name="info_new_task">Почніть з додавання нової задачі</string>
     <string name="info_task_added">Задачу додано</string>

@@ -92,7 +92,9 @@ public class ListActivity extends AppCompatActivity implements
                 DialogUtils.infoDialog(this);
                 break;
             case R.id.menu_delete:
-                mCursor = DialogUtils.deleteDialog(this, this, mFab);
+                if (mAdapter.getItemCount() == ProjectConstants.TASK_LIST_NULL)
+                    TaskUtils.showSnackBar(TaskUtils.getView(this), R.string.info_list_already_empty);
+                else mCursor = DialogUtils.deleteDialog(this, this, mFab);
                 break;
         }
         return super.onOptionsItemSelected(item);
