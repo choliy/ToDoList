@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Todas las tareas restauradas</string>
     <string name="menu_delete">Eliminar todas las tareas</string>
     <string name="menu_done">Hecho</string>
-    <string name="menu_info">Información</string>
+    <string name="menu_about">Acerca de</string>
     <string name="reminder_text">RECORDATORIO</string>
     <string name="priority_text">PRIORIDAD</string>
     <string name="snack_bar_undo">DESHACER</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">Editar recordatorio</string>
     <string name="dialog_reminder_updated">Recordatorio Actualizado:\u0020\u0020</string>
     <string name="dialog_time_text">Hora</string>
+    <string name="info_task_cant_update">No se puede actualizar la tarea</string>
+    <string name="menu_email">Email</string>
+    <string name="menu_feedback">Realimentación</string>
+    <string name="menu_menu">Menú</string>
+    <string name="menu_more_apps">Más aplicaciones</string>
+    <string name="menu_share">Compartir</string>
 </resources>

@@ -35,7 +35,6 @@
     <string name="info_tasks_restored">جميع المهام استعادة</string>
     <string name="menu_delete">حذف جميع المهام</string>
     <string name="menu_done">فعله</string>
-    <string name="menu_info">معلومات</string>
     <string name="reminder_text">تذكير</string>
     <string name="priority_text">أفضلية</string>
     <string name="snack_bar_undo">فك</string>
@@ -49,4 +48,11 @@
     <string name="dialog_reminder_title_edit">تحرير تذكير</string>
     <string name="dialog_reminder_updated">تذكير تحديث:\u0020\u0020</string>
     <string name="dialog_time_text">زمن</string>
+    <string name="info_task_cant_update">لا يمكن تحديث المهمة</string>
+    <string name="menu_about">حول التطبيق</string>
+    <string name="menu_email">البريد الإلكتروني</string>
+    <string name="menu_feedback">ردود الفعل</string>
+    <string name="menu_menu">قائمة طعام</string>
+    <string name="menu_more_apps">تطبيقات أكثر</string>
+    <string name="menu_share">شارك</string>
 </resources>

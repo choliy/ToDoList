@@ -1,4 +1,4 @@
-package com.choliy.igor.todolist;
+package com.choliy.igor.todolist.tool;
 
 import android.content.Context;
 import android.database.Cursor;

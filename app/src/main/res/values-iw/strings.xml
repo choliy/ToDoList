@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">כל המשימות משוחזרות</string>
     <string name="menu_delete">מחק את כל המשימות</string>
     <string name="menu_done">בוצע</string>
-    <string name="menu_info">מֵידָע</string>
+    <string name="menu_about">על האפליקציה</string>
     <string name="reminder_text">תִזכּוֹרֶת</string>
     <string name="priority_text">עדיפות</string>
     <string name="snack_bar_undo">לבטל</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">תזכורת ערוכה</string>
     <string name="dialog_reminder_updated">\u0020\u0020:תזכורת עודכנה:</string>
     <string name="dialog_time_text">זְמַן</string>
+    <string name="info_task_cant_update">לא ניתן לעדכן את המשימה</string>
+    <string name="menu_email">אֶלֶקטרוֹנִי</string>
+    <string name="menu_feedback">מָשׁוֹב</string>
+    <string name="menu_menu">תַפרִיט</string>
+    <string name="menu_more_apps">עוד אפליקציות</string>
+    <string name="menu_share">לַחֲלוֹק</string>
 </resources>

@@ -15,26 +15,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.choliy.igor.todolist.ProjectConstants;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
-import com.choliy.igor.todolist.TaskCursorAdapter;
-import com.choliy.igor.todolist.TaskLoader;
+import com.choliy.igor.todolist.tool.TaskCursorAdapter;
+import com.choliy.igor.todolist.tool.TaskLoader;
 import com.choliy.igor.todolist.data.TaskContract;
 import com.choliy.igor.todolist.util.DialogUtils;
+import com.choliy.igor.todolist.util.MenuUtils;
 import com.choliy.igor.todolist.util.ReminderUtils;
 import com.choliy.igor.todolist.util.TaskUtils;
+import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
+import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 
 public class ListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor>,
-        TaskCursorAdapter.OnTaskClickListener {
+        TaskCursorAdapter.OnTaskClickListener,
+        OnMenuItemClickListener,
+        MenuUtils.OnCloseMenuListener {
 
+    private boolean mMenuShown;
     private Cursor mCursor;
     private FloatingActionButton mFab;
     private TaskCursorAdapter mAdapter;
+    private ContextMenuDialogFragment mContextMenu;
     private BroadcastReceiver mUpdateListReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -46,7 +54,13 @@ public class ListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        setupUi();
+        setupUi(savedInstanceState);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mMenuShown) showMenu();
     }
 
     @Override
@@ -76,7 +90,8 @@ public class ListActivity extends AppCompatActivity implements
         super.onPause();
         TaskUtils.sListActivityActive = false;
         TaskUtils.sTaskListAction = ProjectConstants.TASK_LIST_NULL;
-        unregisterReceiver(mUpdateListReceiver);
+        if (mMenuShown) mContextMenu.dismiss();
+        if (mUpdateListReceiver != null) unregisterReceiver(mUpdateListReceiver);
     }
 
     @Override
@@ -88,16 +103,26 @@ public class ListActivity extends AppCompatActivity implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_info:
-                DialogUtils.infoDialog(this);
+            case R.id.menu_about:
+                showMenu();
                 break;
             case R.id.menu_delete:
-                if (mAdapter.getItemCount() == ProjectConstants.TASK_LIST_NULL)
-                    TaskUtils.showSnackBar(TaskUtils.getView(this), R.string.info_list_already_empty);
-                else mCursor = DialogUtils.deleteDialog(this, this, mFab);
+                deleteAllTasks();
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putBoolean(ProjectConstants.MENU_KEY, mMenuShown);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mMenuShown) mMenuShown = Boolean.FALSE;
+        else super.onBackPressed();
     }
 
     @Override
@@ -124,7 +149,21 @@ public class ListActivity extends AppCompatActivity implements
         finish();
     }
 
-    private void setupUi() {
+    @Override
+    public void onMenuItemClick(View clickedView, int position) {
+        MenuUtils.onMenuClicked(this, position, this);
+    }
+
+    @Override
+    public void onCloseMenu() {
+        mMenuShown = Boolean.FALSE;
+    }
+
+    private void setupUi(Bundle bundle) {
+        if (bundle != null) mMenuShown = bundle.getBoolean(ProjectConstants.MENU_KEY);
+        mContextMenu = MenuUtils.setupMenu(this);
+        mContextMenu.setItemClickListener(this);
+
         mFab = (FloatingActionButton) findViewById(R.id.fab);
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,6 +198,23 @@ public class ListActivity extends AppCompatActivity implements
 
         // Restore Info dialog after rotating if he is shown already
         if (DialogUtils.sIsInfoDialogShown) DialogUtils.infoDialog(this);
+    }
+
+    private void deleteAllTasks() {
+        if (mAdapter.getItemCount() == ProjectConstants.TASK_LIST_NULL) {
+            try {
+                TaskUtils.showSnackBar(TaskUtils.getView(this), R.string.info_list_already_empty);
+            } catch (NullPointerException ex) {
+                Log.e(ListActivity.class.getSimpleName(), ex.getMessage());
+            }
+        } else {
+            mCursor = DialogUtils.deleteDialog(this, this, mFab);
+        }
+    }
+
+    private void showMenu() {
+        mMenuShown = Boolean.TRUE;
+        mContextMenu.show(getSupportFragmentManager(), ListActivity.class.getSimpleName());
     }
 
     private void restartLoader() {

@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">所有任務已還原</string>
     <string name="menu_delete">刪除所有任務</string>
     <string name="menu_done">完成</string>
-    <string name="menu_info">信息</string>
+    <string name="menu_about">關於應用</string>
     <string name="reminder_text">提醒</string>
     <string name="priority_text">優先</string>
     <string name="snack_bar_undo">撤消</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">編輯提醒</string>
     <string name="dialog_reminder_updated">提醒更新時間：\u0020</string>
     <string name="dialog_time_text">時間</string>
+    <string name="info_task_cant_update">無法更新任務</string>
+    <string name="menu_email">電子郵件</string>
+    <string name="menu_feedback">反饋</string>
+    <string name="menu_menu">菜單</string>
+    <string name="menu_more_apps">更多應用程序</string>
+    <string name="menu_share">分享</string>
 </resources>

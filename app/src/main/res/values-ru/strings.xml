@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Все задачи восстановлены</string>
     <string name="menu_delete">Удалить все задачи</string>
     <string name="menu_done">Готово</string>
-    <string name="menu_info">Информация</string>
+    <string name="menu_about">О приложении</string>
     <string name="reminder_text">НАПОМИНАНИЕ</string>
     <string name="priority_text">ПРИОРИТЕТ</string>
     <string name="snack_bar_undo">ВОССТАНОВИТЬ</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">Редактировать Напоминание</string>
     <string name="dialog_reminder_updated">Напоминание обновлено:\u0020\u0020</string>
     <string name="dialog_time_text">Время</string>
+    <string name="info_task_cant_update">Не удается обновить задачу</string>
+    <string name="menu_email">Эл. адрес</string>
+    <string name="menu_feedback">Обратная связь</string>
+    <string name="menu_menu">Меню</string>
+    <string name="menu_more_apps">Больше приложений</string>
+    <string name="menu_share">Поделиться</string>
 </resources>

@@ -35,7 +35,6 @@
     <string name="info_tasks_restored">सभी कार्यों को बहाल</string>
     <string name="menu_delete">सभी कार्यों को हटाएँ</string>
     <string name="menu_done">किया हुआ</string>
-    <string name="menu_info">जानकारी</string>
     <string name="reminder_text">अनुस्मारक</string>
     <string name="priority_text">प्राथमिकता</string>
     <string name="snack_bar_undo">पूर्ववत करें</string>
@@ -49,4 +48,11 @@
     <string name="dialog_reminder_title_edit">अनुस्मारक संपादित करें</string>
     <string name="dialog_reminder_updated">अनुस्मारक अद्यतन:\u0020\u0020</string>
     <string name="dialog_time_text">पहर</string>
+    <string name="info_task_cant_update">कार्य को अपडेट नहीं किया जा सकता</string>
+    <string name="menu_about">ऐप के बारे में</string>
+    <string name="menu_email">ईमेल</string>
+    <string name="menu_feedback">प्रतिक्रिया</string>
+    <string name="menu_menu">मेन्यू</string>
+    <string name="menu_more_apps">और ऐप</string>
+    <string name="menu_share">शेयर</string>
 </resources>

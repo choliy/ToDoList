@@ -1,4 +1,4 @@
-package com.choliy.igor.todolist;
+package com.choliy.igor.todolist.tool;
 
 /**
  * Class for keeping useful constants for To-Do List project
@@ -11,16 +11,17 @@ public interface ProjectConstants {
     String TASK_REMINDER_KEY = "taskReminderKey";
     String TASK_PRIORITY_KEY = "taskPriorityKey";
 
-    // Priority key constants
-    String PRIORITY_KEY = "priorityKey";
-    String PRIORITY_CHANGED_KEY = "priorityChangedKey";
-
     // Date & Time format constants
     String DATE_FORMAT = "d MMMM yyyy";
     String TIME_FORMAT_UK = "HH:mm";
     String TIME_FORMAT_US = "h:mm a";
     String INFO_DATE_FORMAT_UK = DATE_FORMAT + " (" + TIME_FORMAT_UK + ")";
     String INFO_DATE_FORMAT_US = DATE_FORMAT + " (" + TIME_FORMAT_US + ")";
+
+    // Other constants
+    String MENU_KEY = "menuKey";
+    String PRIORITY_KEY = "priorityKey";
+    String PRIORITY_CHANGED_KEY = "priorityChangedKey";
 
     // Default constants
     String DESCRIPTION_EMPTY = "";
@@ -47,4 +48,12 @@ public interface ProjectConstants {
     int TASK_LIST_REMOVE = -2;
     int TASK_LIST_REMOVE_ALL = -3;
     int TASK_LIST_RESTORE_ALL = -4;
+
+    // Menu constants
+    int MENU_CLOSE = 0;
+    int MENU_ABOUT = 1;
+    int MENU_SHARE = 2;
+    int MENU_EMAIL = 3;
+    int MENU_FEEDBACK = 4;
+    int MENU_MORE_APPS = 5;
 }

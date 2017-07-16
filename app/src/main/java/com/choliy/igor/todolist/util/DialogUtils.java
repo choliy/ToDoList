@@ -8,18 +8,20 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import com.choliy.igor.todolist.ProjectConstants;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
 import com.choliy.igor.todolist.data.TaskContract;
 
@@ -284,7 +286,14 @@ public final class DialogUtils {
                         if (taskUri != null) {
                             ContentValues values = new ContentValues();
                             values.put(TaskContract.TaskEntry.COLUMN_REMINDER, reminderTime);
-                            context.getContentResolver().update(taskUri, values, null, null);
+                            try {
+                                context.getContentResolver().update(taskUri, values, null, null);
+                            } catch (SQLException ex) {
+                                Log.e(DialogUtils.class.getSimpleName(), ex.getMessage());
+                                TaskUtils.showSnackBar(
+                                        TaskUtils.getView(context),
+                                        R.string.info_task_cant_update);
+                            }
                         }
                         TaskUtils.finishTaskActivity(context, ProjectConstants.TASK_ACTION_NULL);
                     }

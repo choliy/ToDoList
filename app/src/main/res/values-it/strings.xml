@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Tutte le attività ripristinati</string>
     <string name="menu_delete">Eliminare tutte le attività</string>
     <string name="menu_done">Fatto</string>
-    <string name="menu_info">Informazione</string>
+    <string name="menu_about">Informazioni su App</string>
     <string name="reminder_text">PROMEMORIA</string>
     <string name="priority_text">PRIORITÀ</string>
     <string name="snack_bar_undo">DISFARE</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">Modifica promemoria</string>
     <string name="dialog_reminder_updated">Promemoria Aggiornato:\u0020\u0020</string>
     <string name="dialog_time_text">Tempo</string>
+    <string name="info_task_cant_update">Impossibile aggiornare l\'attività</string>
+    <string name="menu_email">E-mail</string>
+    <string name="menu_feedback">Risposta</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_more_apps">Più applicazioni</string>
+    <string name="menu_share">Condividere</string>
 </resources>

@@ -14,9 +14,9 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.choliy.igor.todolist.ProjectConstants;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
-import com.choliy.igor.todolist.ReminderService;
+import com.choliy.igor.todolist.tool.ReminderService;
 import com.choliy.igor.todolist.activity.ListActivity;
 
 public final class ReminderUtils {

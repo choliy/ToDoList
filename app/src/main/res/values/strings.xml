@@ -33,18 +33,31 @@
     <string name="info_task_removed">Task removed</string>
     <string name="info_task_restored">Task restored</string>
     <string name="info_task_updated">Task updated</string>
+    <string name="info_task_cant_update">Can\'t update task</string>
     <string name="info_list_already_empty">To-Do list is already empty</string>
 
     <!-- Menu -->
-    <string name="menu_info">Information</string>
     <string name="menu_delete">Delete all tasks</string>
+    <string name="menu_menu">Menu</string>
     <string name="menu_done">Done</string>
+    <string name="menu_about">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_email">Email</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_more_apps">More Apps</string>
+    <string name="menu_text_email" translatable="false">choliy.igor@gmail.com</string>
+    <string name="menu_text_subject" translatable="false">About \"To-Do List\"</string>
+    <string name="menu_text_hello" translatable="false">Hello Igor.\n\n\n</string>
+    <string name="menu_app_url" translatable="false">
+        https://play.google.com/store/apps/details?id=com.choliy.igor.todolist</string>
+    <string name="menu_apps_url" translatable="false">
+        https://play.google.com/store/search?q=igor%20choliy&amp;c=apps</string>
 
     <!-- Info Dialog -->
     <string name="dialog_info_title">App information</string>
     <string name="dialog_info_message">Simple and convenient App for controlling everyday tasks.</string>
     <string name="dialog_info_developer" translatable="false">© %1$s by Igor Choliy</string>
-    <string name="dialog_info_version" translatable="false">v1.7.5</string>
+    <string name="dialog_info_version" translatable="false">v2.0.1</string>
     <string name="dialog_linkedin_url" translatable="false">https://www.linkedin.com/in/choliy</string>
     <string name="dialog_info_close">CLOSE</string>
 

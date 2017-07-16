@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Всі задачі відновлені</string>
     <string name="menu_delete">Видалити всі задачі</string>
     <string name="menu_done">Готово</string>
-    <string name="menu_info">Інформація</string>
+    <string name="menu_about">Про програму</string>
     <string name="reminder_text">НАГАДУВАННЯ</string>
     <string name="priority_text">ПРІОРІТЕТ</string>
     <string name="description_date_picker">Іконка вибору дати</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_better_time">Краще встановити майбутній час для нагадування</string>
     <string name="dialog_reminder_dismiss">Нагадування було відмінено</string>
     <string name="dialog_reminder_updated">Нагадування редаговано:\u0020\u0020</string>
+    <string name="info_task_cant_update">Не вдається оновити задачу</string>
+    <string name="menu_email">Електронна пошта</string>
+    <string name="menu_feedback">Зворотній зв\'язок</string>
+    <string name="menu_menu">Меню</string>
+    <string name="menu_more_apps">Більше додатків</string>
+    <string name="menu_share">Поділитися</string>
 </resources>

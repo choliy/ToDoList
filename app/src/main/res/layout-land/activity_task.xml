@@ -14,6 +14,7 @@
         <EditText
             android:id="@+id/editTextDescription"
             style="@style/EditTextStyle"
+            android:imeOptions="flagNoExtractUi"
             android:labelFor="@id/editTextDescription"/>
 
         <LinearLayout
@@ -34,8 +35,6 @@
                 <TextView
                     style="@style/TextViewStyle"
                     android:text="@string/priority_text"/>
-
-                <View style="@style/ViewStyle"/>
 
                 <TextView
                     android:id="@+id/buttonHigh"
@@ -66,8 +65,6 @@
                 <TextView
                     style="@style/TextViewStyle"
                     android:text="@string/reminder_text"/>
-
-                <View style="@style/ViewStyle"/>
 
                 <TextView
                     android:id="@+id/buttonReminder"

@@ -18,7 +18,7 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.choliy.igor.todolist.ProjectConstants;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
 import com.choliy.igor.todolist.data.TaskContract;
 import com.choliy.igor.todolist.util.DialogUtils;
@@ -68,7 +68,7 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
     protected void onPause() {
         super.onPause();
         TaskUtils.sTaskActivityActive = false;
-        unregisterReceiver(mUpdateTaskReceiver);
+        if (mUpdateTaskReceiver != null) unregisterReceiver(mUpdateTaskReceiver);
     }
 
     @Override

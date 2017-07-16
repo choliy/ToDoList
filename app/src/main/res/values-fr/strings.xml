@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Toutes les tâches restaurées</string>
     <string name="menu_delete">Supprimer toutes les tâches</string>
     <string name="menu_done">Terminé</string>
-    <string name="menu_info">Information</string>
+    <string name="menu_about">À propos de l\'application</string>
     <string name="reminder_text">RAPPEL</string>
     <string name="priority_text">PRIORITÉ</string>
     <string name="snack_bar_undo">ANNULER</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">Modifier le rappel</string>
     <string name="dialog_reminder_updated">Rappel Mise à jour:\u0020\u0020</string>
     <string name="dialog_time_text">Temps</string>
+    <string name="info_task_cant_update">Impossible de mettre à jour la tâche</string>
+    <string name="menu_email">Email</string>
+    <string name="menu_feedback">Retour d\'information</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_more_apps">Plus d\'applications</string>
+    <string name="menu_share">Partager</string>
 </resources>

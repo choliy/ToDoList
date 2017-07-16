@@ -1,4 +1,4 @@
-package com.choliy.igor.todolist;
+package com.choliy.igor.todolist.tool;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.choliy.igor.todolist.R;
 import com.choliy.igor.todolist.data.TaskContract;
 import com.choliy.igor.todolist.util.TaskUtils;
 

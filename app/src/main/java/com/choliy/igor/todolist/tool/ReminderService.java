@@ -1,4 +1,4 @@
-package com.choliy.igor.todolist;
+package com.choliy.igor.todolist.tool;
 
 import android.app.IntentService;
 import android.content.ContentUris;
@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 
+import com.choliy.igor.todolist.R;
 import com.choliy.igor.todolist.data.TaskContract;
 import com.choliy.igor.todolist.util.ReminderUtils;
 import com.choliy.igor.todolist.util.TaskUtils;

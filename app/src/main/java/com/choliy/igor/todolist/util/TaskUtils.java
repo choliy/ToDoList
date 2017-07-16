@@ -15,7 +15,7 @@ import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.TextView;
 
-import com.choliy.igor.todolist.ProjectConstants;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
 import com.choliy.igor.todolist.activity.ListActivity;
 import com.choliy.igor.todolist.data.TaskContract;

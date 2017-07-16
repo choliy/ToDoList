@@ -34,7 +34,6 @@
     <string name="info_tasks_restored">Alle Tasks wurden wiederhergestellt</string>
     <string name="menu_delete">Löschen Sie alle Aufgaben</string>
     <string name="menu_done">Erledigt</string>
-    <string name="menu_info">Information</string>
     <string name="reminder_text">MAHNUNG</string>
     <string name="priority_text">PRIORITÄT</string>
     <string name="snack_bar_undo">ZURÜCK</string>
@@ -49,4 +48,11 @@
     <string name="dialog_reminder_title_edit">Erinnerung bearbeiten</string>
     <string name="dialog_reminder_updated">Erinnerung Aktualisiert:\u0020\u0020</string>
     <string name="dialog_time_text">Zeit</string>
+    <string name="info_task_cant_update">Kann die Aufgabe nicht aktualisieren</string>
+    <string name="menu_about">Über App</string>
+    <string name="menu_email">Email</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_menu">Menü</string>
+    <string name="menu_more_apps">Mehr Apps</string>
+    <string name="menu_share">Aktie</string>
 </resources>

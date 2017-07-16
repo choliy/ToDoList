@@ -35,7 +35,7 @@
     <string name="info_tasks_restored">Wszystkie zadania przywrócony</string>
     <string name="menu_delete">Usuń wszystkie zadania</string>
     <string name="menu_done">Gotowe</string>
-    <string name="menu_info">Informacja</string>
+    <string name="menu_about">Informacje o aplikacji</string>
     <string name="reminder_text">PRZYPOMNIENIE</string>
     <string name="priority_text">PRIORYTET</string>
     <string name="snack_bar_undo">COFNIJ</string>
@@ -49,4 +49,10 @@
     <string name="dialog_reminder_title_edit">Edycja Przypomnienie</string>
     <string name="dialog_reminder_updated">Przypomnienie Aktualizacja:\u0020\u0020</string>
     <string name="dialog_time_text">Czas</string>
+    <string name="info_task_cant_update">Nie można zaktualizować zadania</string>
+    <string name="menu_email">E-mail</string>
+    <string name="menu_feedback">Informacje zwrotne</string>
+    <string name="menu_menu">Menu</string>
+    <string name="menu_more_apps">Więcej aplikacji</string>
+    <string name="menu_share">Dzielić</string>
 </resources>
