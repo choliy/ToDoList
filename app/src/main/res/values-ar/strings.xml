@@ -55,4 +55,5 @@
     <string name="menu_menu">قائمة طعام</string>
     <string name="menu_more_apps">تطبيقات أكثر</string>
     <string name="menu_share">شارك</string>
+    <string name="info_task_copied">تم نسخ المهمة</string>
 </resources>

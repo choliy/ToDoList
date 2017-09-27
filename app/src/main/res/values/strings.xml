@@ -33,6 +33,7 @@
     <string name="info_task_removed">Task removed</string>
     <string name="info_task_restored">Task restored</string>
     <string name="info_task_updated">Task updated</string>
+    <string name="info_task_copied">Task copied</string>
     <string name="info_task_cant_update">Can\'t update task</string>
     <string name="info_list_already_empty">To-Do list is already empty</string>
 
@@ -51,13 +52,13 @@
     <string name="menu_app_url" translatable="false">
         https://play.google.com/store/apps/details?id=com.choliy.igor.todolist</string>
     <string name="menu_apps_url" translatable="false">
-        https://play.google.com/store/search?q=igor%20choliy&amp;c=apps</string>
+        https://play.google.com/store/search?q=choliy%20igor&amp;c=apps</string>
 
     <!-- Info Dialog -->
     <string name="dialog_info_title">App information</string>
     <string name="dialog_info_message">Simple and convenient App for controlling everyday tasks.</string>
     <string name="dialog_info_developer" translatable="false">© %1$s by Igor Choliy</string>
-    <string name="dialog_info_version" translatable="false">v2.0.1</string>
+    <string name="dialog_info_version" translatable="false">v2.0.2</string>
     <string name="dialog_linkedin_url" translatable="false">https://www.linkedin.com/in/choliy</string>
     <string name="dialog_info_close">CLOSE</string>
 

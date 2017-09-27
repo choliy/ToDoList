@@ -55,4 +55,5 @@
     <string name="menu_menu">Меню</string>
     <string name="menu_more_apps">Больше приложений</string>
     <string name="menu_share">Поделиться</string>
+    <string name="info_task_copied">Задача скопирована</string>
 </resources>

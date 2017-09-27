@@ -55,4 +55,5 @@
     <string name="menu_menu">メニュー</string>
     <string name="menu_more_apps">より多くのアプリケーション</string>
     <string name="menu_share">シェア</string>
+    <string name="info_task_copied">タスクをコピーしました</string>
 </resources>

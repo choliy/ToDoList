@@ -1,5 +1,7 @@
 package com.choliy.igor.todolist.tool;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.drawable.GradientDrawable;
@@ -88,7 +90,9 @@ public class TaskCursorAdapter extends RecyclerView.Adapter<TaskCursorAdapter.Ta
         infoLayoutVisibility();
     }
 
-    class TaskViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class TaskViewHolder extends RecyclerView.ViewHolder implements
+            View.OnClickListener,
+            View.OnLongClickListener {
 
         private TextView mTaskDescriptionView;
         private ImageView mReminderTask;
@@ -100,6 +104,7 @@ public class TaskCursorAdapter extends RecyclerView.Adapter<TaskCursorAdapter.Ta
             mReminderTask = (ImageView) itemView.findViewById(R.id.reminderTask);
             mPriorityView = itemView.findViewById(R.id.priorityView);
             itemView.setOnClickListener(this);
+            itemView.setOnLongClickListener(this);
         }
 
         @Override
@@ -110,6 +115,17 @@ public class TaskCursorAdapter extends RecyclerView.Adapter<TaskCursorAdapter.Ta
 
             // Set taskId to listener
             mClickListener.onTaskClick(taskId);
+        }
+
+        @Override
+        public boolean onLongClick(View view) {
+            ClipboardManager clipboard = (ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
+            ClipData clip = ClipData.newPlainText(
+                    mContext.getString(R.string.app_name),
+                    mTaskDescriptionView.getText().toString());
+            clipboard.setPrimaryClip(clip);
+            TaskUtils.showSnackBar(view, R.string.info_task_copied);
+            return true;
         }
 
         private void bindView(int position) {

@@ -55,4 +55,5 @@
     <string name="menu_menu">Menu</string>
     <string name="menu_more_apps">Plus d\'applications</string>
     <string name="menu_share">Partager</string>
+    <string name="info_task_copied">Tâche copiée</string>
 </resources>

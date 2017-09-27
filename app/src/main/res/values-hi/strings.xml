@@ -55,4 +55,5 @@
     <string name="menu_menu">मेन्यू</string>
     <string name="menu_more_apps">और ऐप</string>
     <string name="menu_share">शेयर</string>
+    <string name="info_task_copied">कार्य की नकल की गई</string>
 </resources>

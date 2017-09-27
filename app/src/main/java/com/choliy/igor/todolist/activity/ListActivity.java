@@ -20,11 +20,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.R;
+import com.choliy.igor.todolist.data.TaskContract;
+import com.choliy.igor.todolist.tool.ProjectConstants;
 import com.choliy.igor.todolist.tool.TaskCursorAdapter;
 import com.choliy.igor.todolist.tool.TaskLoader;
-import com.choliy.igor.todolist.data.TaskContract;
 import com.choliy.igor.todolist.util.DialogUtils;
 import com.choliy.igor.todolist.util.MenuUtils;
 import com.choliy.igor.todolist.util.ReminderUtils;

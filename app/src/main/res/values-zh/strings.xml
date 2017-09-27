@@ -55,4 +55,5 @@
     <string name="menu_menu">菜單</string>
     <string name="menu_more_apps">更多應用程序</string>
     <string name="menu_share">分享</string>
+    <string name="info_task_copied">任務複製</string>
 </resources>

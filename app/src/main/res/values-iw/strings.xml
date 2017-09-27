@@ -55,4 +55,5 @@
     <string name="menu_menu">תַפרִיט</string>
     <string name="menu_more_apps">עוד אפליקציות</string>
     <string name="menu_share">לַחֲלוֹק</string>
+    <string name="info_task_copied">המשימה הועתקה</string>
 </resources>
