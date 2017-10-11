@@ -52,13 +52,13 @@
     <string name="menu_app_url" translatable="false">
         https://play.google.com/store/apps/details?id=com.choliy.igor.todolist</string>
     <string name="menu_apps_url" translatable="false">
-        https://play.google.com/store/search?q=choliy%20igor&amp;c=apps</string>
+        https://play.google.com/store/search?q=ihor%20choliy&amp;c=apps</string>
 
     <!-- Info Dialog -->
     <string name="dialog_info_title">App information</string>
     <string name="dialog_info_message">Simple and convenient App for controlling everyday tasks.</string>
     <string name="dialog_info_developer" translatable="false">© %1$s by Igor Choliy</string>
-    <string name="dialog_info_version" translatable="false">v2.0.2</string>
+    <string name="dialog_info_version" translatable="false">v2.0.3</string>
     <string name="dialog_linkedin_url" translatable="false">https://www.linkedin.com/in/choliy</string>
     <string name="dialog_info_close">CLOSE</string>
 
